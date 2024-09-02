@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register as an Artist - Art Portfolio Network</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="parallax">
+        <div class="container-form">
+            <h2>Artist Registration</h2>
+            <form id="registrationForm" class="form">
+                <div class="form-step active">
+                    <input type="text" name="artistName" placeholder="Artist Name" required>
+                    <input type="text" name="artMedium" placeholder="Art Medium (e.g., Painting, Sculpture)" required>
+                    <button type="button" class="btn" onclick="nextStep()">Next</button>
+                </div>
+                <div class="form-step">
+                    <input type="url" name="portfolioWebsite" placeholder="Portfolio Website" required>
+                    <input type="text" name="experienceLevel" placeholder="Experience Level" required>
+                    <button type="button" class="btn" onclick="nextStep()">Next</button>
+                    <button type="button" class="btn" onclick="prevStep()">Back</button>
+                </div>
+                <div class="form-step">
+                    <textarea name="briefBio" placeholder="Brief Bio" required></textarea>
+                    <input type="text" name="location" placeholder="Location" required>
+                    <input type="file" name="artworkImage" required>
+                    <button type="button" class="btn" onclick="nextStep()">Next</button>
+                    <button type="button" class="btn" onclick="prevStep()">Back</button>
+                </div>
+                <div class="form-step">
+                    <input type="text" name="instagramProfile" placeholder="Instagram Profile" required>
+                    <input type="text" name="twitterProfile" placeholder="Twitter Profile" required>
+                    <input type="text" name="collaborationType" placeholder="Preferred Collaboration Type (e.g., Co-creator, Freelance)" required>
+                    <button type="submit" class="btn">Register</button>
+                    <button type="button" class="btn" onclick="prevStep()">Back</button>
+                </div>
+            </form>
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
