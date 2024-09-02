@@ -52,12 +52,15 @@
             // If everything is valid, show success message
             document.getElementById('success-message').style.display = 'block';
             event.preventDefault(); // Prevent actual form submission for demonstration
+             // Store user data in localStorage
+            localStorage.setItem('userEmail', email);
+            localStorage.setItem('userPassword', password);
 
             // Wait for 5 seconds and then redirect or perform another action
             setTimeout(function() {
                 // Redirect to the login page or another page
                 window.location.href = "index.html"; // Redirect to index page
-            }, 5000); // 5000 milliseconds = 5 seconds
+            }, 3000); // 5000 milliseconds = 5 seconds
         });
     </script>
 </body>
